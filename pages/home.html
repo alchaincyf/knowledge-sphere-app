@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页 - 知识星球</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="phone-container">
+        <!-- 状态栏 -->
+        <div class="status-bar">
+            <div class="status-bar-left">
+                <span>9:41</span>
+            </div>
+            <div class="status-bar-right">
+                <span><i class="fas fa-signal"></i></span>
+                <span class="ml-1"><i class="fas fa-wifi"></i></span>
+                <span class="ml-1"><i class="fas fa-battery-full"></i></span>
+            </div>
+        </div>
+        
+        <!-- 导航栏 -->
+        <div class="bg-white px-4 py-2 flex justify-between items-center">
+            <h1 class="text-xl font-bold">我的星球</h1>
+            <div class="flex items-center">
+                <a href="#" class="mr-4"><i class="fas fa-search text-gray-600"></i></a>
+                <a href="#"><i class="fas fa-plus text-gray-600"></i></a>
+            </div>
+        </div>
+        
+        <!-- 内容区域 -->
+        <div class="content-area px-4 py-2">
+            <!-- 分类选项卡 -->
+            <div class="flex space-x-4 mb-4 overflow-x-auto py-2">
+                <a href="#" class="px-4 py-1 bg-blue-500 text-white rounded-full text-sm whitespace-nowrap">全部</a>
+                <a href="#" class="px-4 py-1 bg-gray-200 text-gray-700 rounded-full text-sm whitespace-nowrap">我创建的</a>
+                <a href="#" class="px-4 py-1 bg-gray-200 text-gray-700 rounded-full text-sm whitespace-nowrap">已加入的</a>
+                <a href="#" class="px-4 py-1 bg-gray-200 text-gray-700 rounded-full text-sm whitespace-nowrap">付费圈子</a>
+                <a href="#" class="px-4 py-1 bg-gray-200 text-gray-700 rounded-full text-sm whitespace-nowrap">免费圈子</a>
+            </div>
+            
+            <!-- 圈子列表 -->
+            <div class="space-y-4">
+                <!-- 圈子项 1 -->
+                <a href="circle-detail.html" class="card flex items-start p-4">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97" alt="编程学习" class="avatar-lg mr-3">
+                    <div class="flex-1">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-bold">编程学习圈</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">付费</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-1">前沿技术学习与分享，定期直播讲解</p>
+                        <div class="flex justify-between items-center mt-2">
+                            <div class="flex items-center">
+                                <span class="text-xs text-gray-500">成员: 3.2万</span>
+                                <span class="text-xs text-gray-500 ml-2">内容: 2300+</span>
+                            </div>
+                            <div class="text-blue-500 text-xs">最近更新: 10分钟前</div>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- 圈子项 2 -->
+                <a href="circle-detail.html" class="card flex items-start p-4">
+                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" alt="职场成长" class="avatar-lg mr-3">
+                    <div class="flex-1">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-bold">职场成长指南</h3>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">免费</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-1">职场经验分享，简历优化，面试技巧</p>
+                        <div class="flex justify-between items-center mt-2">
+                            <div class="flex items-center">
+                                <span class="text-xs text-gray-500">成员: 1.5万</span>
+                                <span class="text-xs text-gray-500 ml-2">内容: 980+</span>
+                            </div>
+                            <div class="text-blue-500 text-xs">最近更新: 2小时前</div>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- 圈子项 3 -->
+                <a href="circle-detail.html" class="card flex items-start p-4">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173" alt="投资理财" class="avatar-lg mr-3">
+                    <div class="flex-1">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-bold">投资理财精选</h3>
+                            <span class="bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded">付费</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-1">股票、基金分析，财务自由规划指南</p>
+                        <div class="flex justify-between items-center mt-2">
+                            <div class="flex items-center">
+                                <span class="text-xs text-gray-500">成员: 8.3千</span>
+                                <span class="text-xs text-gray-500 ml-2">内容: 650+</span>
+                            </div>
+                            <div class="text-blue-500 text-xs">最近更新: 昨天</div>
+                        </div>
+                    </div>
+                </a>
+                
+                <!-- 圈子项 4 -->
+                <a href="circle-detail.html" class="card flex items-start p-4">
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd" alt="健康饮食" class="avatar-lg mr-3">
+                    <div class="flex-1">
+                        <div class="flex justify-between items-start">
+                            <h3 class="font-bold">健康生活分享</h3>
+                            <span class="bg-green-100 text-green-800 text-xs px-2 py-1 rounded">免费</span>
+                        </div>
+                        <p class="text-sm text-gray-500 mt-1">饮食、运动、心理健康指南</p>
+                        <div class="flex justify-between items-center mt-2">
+                            <div class="flex items-center">
+                                <span class="text-xs text-gray-500">成员: 2.1万</span>
+                                <span class="text-xs text-gray-500 ml-2">内容: 1200+</span>
+                            </div>
+                            <div class="text-blue-500 text-xs">最近更新: 3天前</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <!-- 底部导航栏 -->
+        <div class="tab-bar">
+            <a href="home.html" class="tab-item active">
+                <div class="tab-icon"><i class="fas fa-home"></i></div>
+                <div>首页</div>
+            </a>
+            <a href="discover.html" class="tab-item">
+                <div class="tab-icon"><i class="fas fa-compass"></i></div>
+                <div>发现</div>
+            </a>
+            <a href="notifications.html" class="tab-item">
+                <div class="tab-icon"><i class="fas fa-bell"></i></div>
+                <div>消息</div>
+            </a>
+            <a href="profile.html" class="tab-item">
+                <div class="tab-icon"><i class="fas fa-user"></i></div>
+                <div>我的</div>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
